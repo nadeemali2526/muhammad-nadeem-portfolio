@@ -45,7 +45,7 @@ Open `script.js` and update the contact values at the top if needed:
 
 ```js
 const CONTACT_EMAIL = "nadeemscientist44@gmail.com";
-const CONTACT_PHONE = "+923030535477";
+const CONTACT_PHONE = "+923030534577";
 ```
 
 The contact email and phone links are populated from these variables. The LinkedIn URL is in `index.html`; replace it if your profile URL changes.
@@ -113,7 +113,7 @@ The website uses the professional experience, education, skills, achievements, p
 
 ## Recent portfolio enhancements
 - Animated type-and-delete hero headline for RCM service keywords.
-- Floating WhatsApp contact button linked to +92 303 0535477.
+- Floating WhatsApp contact button linked to +92 303 0534577.
 - Hero WhatsApp CTA and direct contact link.
 - Circular profile-photo slot at `assets/profile-photo.jpg`.
 
