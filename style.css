@@ -125,3 +125,24 @@ h1 span, .section-heading h2 span, .highlight-grid h2 span, .contact-card h2 spa
 @media (prefers-reduced-motion:reduce) {
   *,*::before,*::after { scroll-behavior:auto !important; animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
 }
+
+
+/* Portfolio enhancement: profile photo, rotating headline and WhatsApp contact */
+.typed-wrap { display:inline-block; min-height:1.12em; }
+#typed-word { background:linear-gradient(100deg,#74a8ff 10%,#35d5f2 90%); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.typing-cursor { display:inline-block; margin-left:3px; color:var(--cyan); animation:cursorBlink .8s steps(2,start) infinite; }
+@keyframes cursorBlink { to { visibility:hidden; } }
+.button-whatsapp { border:1px solid rgba(37,211,102,.45); color:#b9f5cf; background:rgba(37,211,102,.09); }
+.button-whatsapp:hover { border-color:#25d366; box-shadow:0 10px 30px rgba(37,211,102,.12); }
+.profile-photo-wrap { width:116px; height:116px; margin:25px auto 17px; position:relative; border-radius:50%; padding:4px; background:linear-gradient(135deg,var(--blue),var(--cyan)); box-shadow:0 10px 35px rgba(53,213,242,.16); }
+.profile-photo-wrap::after { content:""; position:absolute; inset:-7px; border:1px solid rgba(53,213,242,.28); border-radius:50%; }
+.profile-photo,.photo-fallback { width:100%; height:100%; border-radius:50%; object-fit:cover; display:grid; place-items:center; }
+.profile-photo { position:absolute; inset:4px; width:calc(100% - 8px); height:calc(100% - 8px); z-index:2; background:var(--panel-2); }
+.photo-fallback { color:#fff; font:800 30px var(--display); background:linear-gradient(145deg,#245bb3,#10233d); }
+.profile-card h2 { text-align:center; }
+.profile-card > p { text-align:center; }
+.whatsapp-float { position:fixed; right:22px; bottom:22px; z-index:50; width:60px; height:60px; display:grid; place-items:center; border-radius:50%; color:#fff; background:#25d366; box-shadow:0 8px 28px rgba(0,0,0,.35),0 0 0 5px rgba(37,211,102,.13); transition:transform .2s,box-shadow .2s; }
+.whatsapp-float:hover { transform:translateY(-4px) scale(1.04); box-shadow:0 12px 34px rgba(37,211,102,.3); }
+.whatsapp-float svg { width:34px; height:34px; }
+@media(max-width:700px) { .whatsapp-float { width:56px; height:56px; right:16px; bottom:16px; } .typed-wrap { min-height:1.2em; } }
+@media(prefers-reduced-motion:reduce) { .typing-cursor { animation:none; } }

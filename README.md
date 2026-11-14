@@ -109,3 +109,13 @@ The page includes a title, meta description, author, theme color, Open Graph tit
 ## Content accuracy note
 
 The website uses the professional experience, education, skills, achievements, payer experience, and contact information provided in the supplied CV. It intentionally does not invent client names, certificates, awards beyond the CV, project case studies, or performance metrics beyond those stated in the CV.
+
+
+## Recent portfolio enhancements
+- Animated type-and-delete hero headline for RCM service keywords.
+- Floating WhatsApp contact button linked to +92 303 0535477.
+- Hero WhatsApp CTA and direct contact link.
+- Circular profile-photo slot at `assets/profile-photo.jpg`.
+
+### Add your profile photo
+Upload a clear professional headshot to the `assets` folder and name it exactly `profile-photo.jpg`. A square image works best. The portfolio currently displays an MN fallback until that photo is added.
